@@ -1,0 +1,16 @@
+The following CSS code causes an unexpected layout issue in some browsers:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+```
+
+The issue is that if the total width of the `.item` elements exceeds the width of the `.container`, the `space-between` justification will not work as expected. Instead, the items will either overflow the container or wrap onto multiple lines.
