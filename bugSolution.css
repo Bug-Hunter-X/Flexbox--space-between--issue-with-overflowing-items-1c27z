@@ -1,0 +1,18 @@
+The following CSS code fixes the layout issue:
+
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 5px;
+}
+```
+
+By setting `flex-wrap: wrap`, we allow the items to wrap onto multiple lines if necessary. This ensures that the `space-between` justification works correctly even when the items overflow the container width.
